@@ -1,0 +1,185 @@
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue-main);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.logo-nft {
+    width: 300px;
+    height: 540px;
+    border: 20px solid var(--dark-blue-card);
+    background-color: var(--dark-blue-card);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0  20px #191919 ,  0 0 40px #191919 ;
+}
+
+
+.logo-nft .img-nft {
+    background-image: url("../images/image-equilibrium.jpg");
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+
+.img-nft .inside-i {
+    background-color: rgb(0, 255, 247 , 0.6);
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-nft:hover .inside-i {
+    width: 100%;
+}
+
+.inside-i img {
+    display: none;
+    transition: 0.5s;
+}
+
+.inside-i:hover img {
+    display: block;
+}
+
+
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--white-color);
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.heading:hover {
+    color: var(--cyan-color);
+} 
+
+p {
+    line-height: 1.8;
+    color: var(--soft-blue);
+    margin-bottom: 30px;
+}
+
+
+.logo-nft .avatar {
+    display: flex;
+    width: 225px;
+    justify-content: space-between;
+}
+
+.logo-nft .avatar img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.avatar div {
+    margin-top: 7px;
+    word-spacing: 2px;
+    font-size: 15px;
+    color: var(--soft-blue);
+}
+
+.avatar span {
+    color: white;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.avatar span:hover {
+    color: var(--cyan-color);
+}
+
+.group-eth {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark-blue-line);
+}
+
+.group-eth .eth {
+    display: flex;
+    align-items: center;
+}
+
+.eth img {
+    width: 13px;
+    margin-top: 2px;
+    margin-right: 10px;
+    color: aqua;
+}
+
+.eth div {
+    color: aqua;
+    font-size: 16px;
+}
+
+
+.group-eth .time {
+    display: flex;
+    align-items: center;
+}
+
+.time img {
+    width: 15px;
+    margin-top: 3px;
+    margin-right: 9px;
+    color: var(--soft-blue);
+}
+
+.time div {
+    font-size: 15px;
+    color: var(--soft-blue);
+} 
+
+
+
+:root {
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white-color: hsl(0, 0%, 100%);
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan-color: hsl(178, 100%, 50%);
+}
+
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
